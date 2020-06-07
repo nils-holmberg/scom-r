@@ -7,17 +7,19 @@
 #https://shiny.rstudio.com/
 #sgsdm.isk.lu.se:3838/scom-r/src/shiny-kmeans/
 library(shiny)
+runExample("09_upload"
 
 #clear workspace
-#rm(list=ls())
+rm(list=ls())
 #import trial dataset, 1920 cases
 #dft = read.table('csv/dataset-trials-200218.csv', sep='\t', header=T, strip.white=TRUE, colClasses=c("com_view"="character"))
 #load functions
-#source("src/multiclass-functions.R")
+source("src/shiny-wordcloud/app.R")
+source("src/shiny-wordcloud/wordcloud-functions.R")
 
 
-ui <- fluidPage()
-server <- function(input, output) {}
+#ui <- fluidPage()
+#server <- function(input, output) {}
 shinyApp(ui=ui, server=server)
 
 
