@@ -5,6 +5,7 @@
 #~ ##################################################################### 200604
 #install.packages("shiny", lib="~/lib/r-cran")
 #https://shiny.rstudio.com/
+#sgsdm.isk.lu.se:3838/scom-r/src/shiny-kmeans/
 library(shiny)
 
 #clear workspace
