@@ -7,16 +7,20 @@
 #https://shiny.rstudio.com/
 #sgsdm.isk.lu.se:3838/scom-r/src/shiny-kmeans/
 library(shiny)
-runExample("09_upload"
+#runExample("09_upload"
 
 #clear workspace
 rm(list=ls())
-#import trial dataset, 1920 cases
-#dft = read.table('csv/dataset-trials-200218.csv', sep='\t', header=T, strip.white=TRUE, colClasses=c("com_view"="character"))
+#import dataset, 2000 cases
+df = read.csv('csv/org-emo.csv', header=T, sep="\t", strip.white=TRUE, stringsAsFactors=FALSE)
 #load functions
 source("src/shiny-wordcloud/app.R")
 source("src/shiny-wordcloud/wordcloud-functions.R")
+#
+#source("/tmp/scom/shiny-examples/066-upload-file/server.R")
+#source("/tmp/scom/shiny-examples/066-upload-file/ui.R")
 
+#df = get_cloud(df)
 
 #ui <- fluidPage()
 #server <- function(input, output) {}
@@ -55,7 +59,7 @@ head(docvars(socm_corp))
 #subset
 socm_corp <- corpus_subset(socm_corp, lang=="sv")
 
-#tokenize
+#tokenize, lemmatize
 socm_toks = tokens(socm_corp, 
 what = "word",
 remove_punct = TRUE,
