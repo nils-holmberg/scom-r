@@ -1,3 +1,6 @@
+
+#https://www.r-bloggers.com/word-clouds-for-management-presentations-a-workflow-with-r-quanteda/
+
 #~ ##################################################################### 200608
 library(quanteda)
 library(stopwords)
