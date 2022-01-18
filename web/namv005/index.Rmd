@@ -1,0 +1,62 @@
+---
+title: "Presentation Ninja"
+subtitle: "with xaringan"
+author: "Nils Holmberg"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: lib
+    chakra: lib/remark-latest.min.js
+    css: [default, metropolis, metropolis-fonts]
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+# some plot
+
+```{r fig_01}
+fit = lm(dist ~ 1 + speed, data = cars)
+coef(summary(fit))
+par(mar = c(4, 4, 1, .1))
+plot(cars, pch = 19, col = 'darkgray', las = 1)
+abline(fit, lwd = 2)
+```
+
+some text and inline [link](https://remarkjs.com/downloads/remark-latest.min.js)..
+
+---
+# some table
+- title: some testing
+- output: html_notebook
+
+```{r tab_01}
+knitr::kable(head(mtcars), format = 'html')
+```
+
+---
+
+## title is h1 level 1
+
+```{r test_01, eval=F, echo=T, fig.cap='some caption', out.width='80%', fig.asp=.75, fig.align='center'}
+install.packages(c("xaringan"), lib="~/lib/r-cran")
+library(xaringan)
+#xaringan::infinite_moon_reader("src/namv005.Rmd")
+rmarkdown::render("src/namv005.Rmd", output_dir="web")
+```
+
+## so section starts as level 2
+
+
+
+library(tidyverse)
+toss = c("w", "l", "w", "w" , "w", "l", "w", "l", "w")
+toss_df <- tibble(toss=toss) %>% 
+mutate(n_trials  = seq(n()),
+n_success = cumsum(toss == "w"))
+
+
+
+
+
+
