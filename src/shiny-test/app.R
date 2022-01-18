@@ -1,4 +1,6 @@
 library(shiny)
+library(wordcloud2)
+#source("/home/sol-nhl/dev/r-cran/scom-r/src/shiny-wordcloud/wordcloud-functions.R")
 
 # Define UI for data upload app ----
 ui <- fluidPage(
@@ -53,8 +55,12 @@ ui <- fluidPage(
     # Main panel for displaying outputs ----
     mainPanel(
 
+      # Output: Histogram ----
+      plotOutput(outputId="cloud_plot")
+#wordcloud2Output(outputId="cloud_plot")
+
       # Output: Data file ----
-      tableOutput("contents")
+#      tableOutput("contents")
 
     )
 
@@ -64,15 +70,38 @@ ui <- fluidPage(
 # Define server logic to read selected file ----
 server <- function(input, output) {
 
-#data <- reactive({
-#    file1 <- input$file
-#    req(file1)
-#})
+get_input <- reactive({
+if (exists("input$file1")) {
+df = data.frame(feature=c("word","cloud"), frequency=c(50,100))
+} else if (!is.null(input$file1)){
+df = data.frame(feature=c("some","cloud"), frequency=c(50,100))
+}
+})
 
-#if(!exists("input$file1")){
+  output$cloud_plot <- renderPlot({
+
+df = get_input()
+
+#if(exists("input$file1")){
 #    df = data.frame(feature=c("word","cloud"), frequency=c(50,100))
 #    return(df)
+#}else{
+#    df = data.frame(feature=c("some","cloud"), frequency=c(50,100))
 #}
+
+#if(nrow(df)<2){
+#df = data.frame(feature=c("word","cloud"), frequency=c(50,100))
+#}else{
+#df = read.csv('/home/sol-nhl/dev/r-cran/scom-r/csv/org-emo.csv', header=T, sep="\t", strip.white=TRUE, stringsAsFactors=FALSE)
+#df = get_cloud(df)
+#}
+
+df = as.data.frame(df[,1:2])
+#quanteda::textplot_wordcloud(socm_dfm, max_words=200)
+wordcloud::wordcloud(words=df$feature, freq=df$frequency, min.freq=1, max.words=200, random.order=FALSE, rot.per=0.35, colors=RColorBrewer::brewer.pal(8, "Dark2"), scale=c(4.0, 0.5))
+#wordcloud2::wordcloud2(data=df, size=1.0, minSize=0.1, color='random-dark')
+
+    })
 
   output$contents <- renderTable({
 

@@ -12,6 +12,7 @@ library(stringr)
 #library(shiny)
 library(wordcloud)
 library(wordcloud2)
+packageVersion("wordcloud2")
 
 #load data
 fp = "csv/org-emo.csv"

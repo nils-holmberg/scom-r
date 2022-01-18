@@ -5,7 +5,7 @@ library(shiny)
 ui <- fluidPage(
 
   # App title ----
-  titlePanel("get wordcloud"),
+  titlePanel("word up cloud"),
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
