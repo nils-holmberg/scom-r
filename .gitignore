@@ -4,11 +4,13 @@
 
 # folder content
 log/*
+qmd/*
 src/*
 tmp/*
 
 # keep empty dir
 !log/.gitkeep
+!qmd/.gitkeep
 !src/.gitkeep
 !tmp/.gitkeep
 

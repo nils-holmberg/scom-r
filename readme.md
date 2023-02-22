@@ -1,2 +1,14 @@
 # strategic communication with r
-workshop repository
+
+- spss migration
+
+
+
+
+
+---
+
+- [external website](https://nils-holmberg.github.io/scom-r/)
+
+
+
