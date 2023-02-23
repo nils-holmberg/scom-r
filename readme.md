@@ -1,7 +1,8 @@
 # strategic communication with r
 
-- spss migration
+## workshops spss migration
 
+- [scom-skoc62](https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html)
 
 
 
