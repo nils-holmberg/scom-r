@@ -9,6 +9,7 @@
 
 ---
 
+- [internal repo](https://github.com/nils-holmberg/scom-r)
 - [external website](https://nils-holmberg.github.io/scom-r/)
 
 
