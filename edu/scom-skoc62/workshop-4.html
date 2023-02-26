@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="nils.holmberg@isk.lu.se">
+
+<title>SKOC62: Forskningsmetoder i strategisk kommunikation VT23</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="workshop-4_files/libs/clipboard/clipboard.min.js"></script>
+<script src="workshop-4_files/libs/quarto-html/quarto.js"></script>
+<script src="workshop-4_files/libs/quarto-html/popper.min.js"></script>
+<script src="workshop-4_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="workshop-4_files/libs/quarto-html/anchor.min.js"></script>
+<link href="workshop-4_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="workshop-4_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="workshop-4_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="workshop-4_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="workshop-4_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="workshop-4_files/libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<script src="workshop-4_files/libs/viz-1.8.2/viz.js"></script>
+<link href="workshop-4_files/libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="workshop-4_files/libs/grViz-binding-1.0.6.1/grViz.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">SKOC62: Forskningsmetoder i strategisk kommunikation VT23</h1>
+            <p class="subtitle lead">Quantitative methods workshops 1 — 4</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>nils.holmberg@isk.lu.se </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="introduction" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-88e934f01eb534780f98" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-88e934f01eb534780f98">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+
+</div>
+<ul>
+<li><p>SPSS download student version: <a href="https://www.lu.se/studera/livet-som-student/it-tjanster-support-och-driftinfo/programvara">link</a></p></li>
+<li><p>SPSS canvas data file: <a href="https://canvas.education.lu.se/courses/21228/files/3453815/download?download_frd=1">link</a></p></li>
+<li><p>SPSS tutorial in english: <a href="https://www.lse.ac.uk/Methodology/Software-tutorials/SPSS-tutorials">link</a></p></li>
+<li><p>SPSS tutorial in swedish: <a href="https://www.graduateschool.sam.lu.se/current-students/student-links-and-resources/methods-resources-thesis-writing/how-use-spss">link</a></p></li>
+<li><p>Observe that instructions become less and less detailed as you work your way through the tasks.</p></li>
+<li><p>Open SPSS. Log into the course website at Canvas. Download the file Communicative Organizations Database.</p></li>
+<li><p><strong>SUPER IMPORTANT!! Save your data file and all changes so you can use it for the following workshops! Also save your output files or copy paste relevant parts to another document if you want to remember what you did in the previous workshop!</strong></p></li>
+</ul>
+</section>
+<section id="workshop-descriptive-statistics" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Workshop: Descriptive statistics</h1>
+</section>
+<section id="workshop-data-transformation" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Workshop: Data transformation</h1>
+</section>
+<section id="workshop-bivariate-analysis" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Workshop: Bivariate analysis</h1>
+</section>
+<section id="workshop-multivariate-analysis" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Workshop: Multivariate analysis</h1>
+<section id="multiple-regression-analysis" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="multiple-regression-analysis"><span class="header-section-number">4.1</span> Multiple regression analysis</h2>
+<ol type="a">
+<li><p>Create a model using multiple regression analysis <code>Analyze -&gt; Regression -&gt; Linear</code>.</p></li>
+<li><p>Under Dependent, enter your dependent variable (informationaccessindex, Workshop #3 task 1a). Under Independent(s), enter your independent variables: Age in years (see Workshop #2 task 2), dum_female, Org_type, dum_manager and dum_communicator (Workshop #3 task 3). Click OK.</p></li>
+<li><p>Choose Method: Enter.</p></li>
+</ol>
+<hr>
+<ul>
+<li><a href="https://nils-holmberg.github.io/scom-r/">scom-r website</a></li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
