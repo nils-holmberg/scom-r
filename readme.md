@@ -2,9 +2,10 @@
 
 ## workshops spss migration
 
-- [scom-skoc62](https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html)
-
-
+- [scom-skoc62-workshop-1](https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html)
+- [scom-skoc62-workshop-2](https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-2.html)
+- [scom-skoc62-workshop-3](https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-3.html)
+- [scom-skoc62-workshop-4](https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-4.html)
 
 
 ---
