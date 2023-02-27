@@ -3787,8 +3787,8 @@ color: #333333;
 <h2 data-number="0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cfc6b2bd807db86e84eb" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-cfc6b2bd807db86e84eb">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-51123ee55a0ea2f6d1ca" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-51123ee55a0ea2f6d1ca">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell">
@@ -3823,7 +3823,23 @@ color: #333333;
 <ol type="a">
 <li><p>Create a new summative informationaccessindex using the variables 6-11: info_work, info_org, info_vision, info_change, info_intracomm and info_mgmttrust. Note central tendency, dispersion and normal distribution.</p></li>
 <li><p>Take a look at the following variables: Age in years (see previous workshop), Gender, Role, and Org_type. Note the dispersion, central tendency and normal distribution of the variables as applicable. Are the variables quantitative (ratio/interval) or qualitative (nominal/ordinal)?</p></li>
+<li><p>How can we think about the possible effects that the variables in 1b can have on the index in 1a? What does the index measure?</p></li>
 </ol>
+</section>
+<section id="bivariate-analysis" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="bivariate-analysis"><span class="header-section-number">3.2</span> Bivariate analysis</h2>
+<ol type="a">
+<li><p>Perform bivariate analyses for each of the variables in 1b and the informationaccessindex. Use compare means to compare with qualitative variables; use correlate to compare with quantitative variables. (NB: For tests of statistical significance when comparing means, please follow instructions given during the workshop (ie independent samples t-test and one-way ANOVA).)</p></li>
+<li><p>Now perform bivariate analyses for each of the variables in 1b pairwise (i.e. compare them with each other, using cross tables, compare means, or correlation as applicable). Note any significant relationships.</p></li>
+</ol>
+</section>
+<section id="creating-dummy-variables" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="creating-dummy-variables"><span class="header-section-number">3.3</span> Creating dummy variables</h2>
+<ol type="a">
+<li><p>Recode Gender to a variable with only two categories, Female=1 and Male=0. Compare it with the original variable to make sure you coded correctly. Name it dum_female.</p></li>
+<li><p>Recode Role into three separate dummy variables as follows: Create three new variables named dum_manager, dum_communicator, and dum_coworker. dum_manager should have the value 1 for manager and 0 for all other values in the old variable. dum_communicator should have the vale 1 for communicator and 0 for all other values in the old variable. dum_coworker should have the value 1 for coworkers and 0 for all other values in the old variable. Compare the dummy variables with the original variable Role to make sure you coded correctly. Note that you will use these variables during the next workshop!</p></li>
+</ol>
+<p><strong>THAT’S IT FOR TODAY! REMEMBER TO SAVE YOUR DATA AND OUTPUT FILES (THOSE ARE TWO DIFFERENT OPERATIONS)!</strong></p>
 </section>
 </section>
 <section id="workshop-multivariate-analysis" class="level1" data-number="4">
