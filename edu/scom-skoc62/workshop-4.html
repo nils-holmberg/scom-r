@@ -3787,8 +3787,8 @@ color: #333333;
 <h2 data-number="0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-54869b9ee3857d7e8ee7" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-54869b9ee3857d7e8ee7">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8a718ad1889f52df1c96" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-8a718ad1889f52df1c96">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell">
@@ -3828,9 +3828,21 @@ color: #333333;
 <h2 data-number="4.1" class="anchored" data-anchor-id="multiple-regression-analysis"><span class="header-section-number">4.1</span> Multiple regression analysis</h2>
 <ol type="a">
 <li><p>Create a model using multiple regression analysis <code>Analyze -&gt; Regression -&gt; Linear</code>.</p></li>
-<li><p>Under Dependent, enter your dependent variable (informationaccessindex, Workshop #3 task 1a). Under Independent(s), enter your independent variables: Age in years (see Workshop #2 task 2), dum_female, Org_type, dum_manager and dum_communicator (Workshop #3 task 3). Click OK.</p></li>
-<li><p>Choose Method: Enter.</p></li>
+<li><p>Under Dependent, enter your dependent variable (<code>index_infoaccess</code>, Workshop #3 task 1a). Under Independent(s), enter your independent variables: <code>Age</code> in years (see Workshop #2 task 2), <code>dummy_gender</code>, <code>Org_type</code>, <code>dummy_manager</code> and <code>dummy_communicator</code> (Workshop #3 task 3). Click OK.</p></li>
+<li><p>Choose <code>Method, Enter</code>.</p></li>
+<li><p>Under Statistics, choose <code>Estimates, Confidence intervals, Model fit, Descriptives</code>. Under Residuals: <code>Casewise diagnostics, Outliers</code>.</p></li>
+<li><p>Under Options, choose <code>Exclude cases pairwise</code>.</p></li>
+<li><p>Under Plots, put <code><em>ZRESID</em></code><em> in Y box and <code></code></em><code>ZPRED</code> in X box; tick the box for Normal probability plot. Click OK to run regression analysis.</p></li>
+<li><p>Correlations: check for multicollinearity (no bivariate above 0.7)</p></li>
+<li><p>Normal PP plot: check for normality (should be straight diagonal)</p></li>
+<li><p>Scatterplot: check for homoscedasticity, (should have rectangular shape with most scores in the centre)</p></li>
+<li><p>ANOVA: F-test tells you whether model is useful (should be significant).</p></li>
+<li><p>Model summary: R squared tells you how much of variance in the dependent variable can be regressed to the independent variables.</p></li>
+<li><p>Coefficients: What variables have significant coefficients? Under Standardized coefficients, note positive/negative relationship and the relative size of the coefficients.</p></li>
+<li><p>How do you interpret the model?</p></li>
+<li><p>Try to take out one or two independent variables. How does it affect the R square?</p></li>
 </ol>
+<p><strong>THAT’S IT FOR TODAY! REMEMBER TO SAVE YOUR DATA AND OUTPUT FILES (THOSE ARE TWO DIFFERENT OPERATIONS)!</strong></p>
 <hr>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/">scom-r website</a></li>
