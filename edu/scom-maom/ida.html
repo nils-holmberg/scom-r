@@ -2664,28 +2664,28 @@ Caused by warning:
 ! `cur_data()` was deprecated in dplyr 1.1.0.
 ℹ Please use `pick()` instead.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>dtb <span class="ot">=</span> dta <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">62</span><span class="sc">:</span><span class="dv">66</span>)) <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">names_to=</span><span class="st">&quot;experience_level&quot;</span>, <span class="at">values_to=</span><span class="st">&quot;experience_values&quot;</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>dtb <span class="sc">%&gt;%</span> <span class="fu">print</span>(<span class="at">n=</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="sc">%&gt;%</span> <span class="fu">print</span>(<span class="at">n=</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 445 × 3
-      ID experience_level experience_values
-   &lt;int&gt; &lt;chr&gt;            &lt;chr&gt;            
- 1     1 UppGrMF          Ja               
- 2     1 UppGrF           Nej              
- 3     1 UppGrFoOF        Nej              
- 4     1 UppGrOF          Nej              
- 5     1 UppGrMOF         Nej              
- 6     2 UppGrMF          Nej              
- 7     2 UppGrF           Nej              
- 8     2 UppGrFoOF        Nej              
- 9     2 UppGrOF          Ja               
-10     2 UppGrMOF         Nej              
-# … with 435 more rows</code></pre>
+<pre><code># A tibble: 89 × 3
+      ID scale_type scale_value
+   &lt;int&gt; &lt;chr&gt;            &lt;int&gt;
+ 1     1 gr_pa_5              5
+ 2     2 gr_pa_2              2
+ 3     3 gr_pa_4              4
+ 4     4 gr_pa_3              3
+ 5     5 gr_pa_4              4
+ 6     6 gr_pa_3              3
+ 7     7 gr_pa_1              1
+ 8     8 gr_pa_4              4
+ 9     9 gr_pa_2              2
+10    10 gr_pa_1              1
+# … with 79 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># instrument, pivot longer</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>dtc <span class="ot">=</span> dta <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">14</span>) <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">14</span>, <span class="at">names_to=</span><span class="st">&quot;instrument_type&quot;</span>, <span class="at">values_to=</span><span class="st">&quot;instrument_values&quot;</span>)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>dtc <span class="sc">%&gt;%</span> <span class="fu">print</span>(<span class="at">n=</span><span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>dtb <span class="ot">=</span> dta <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">62</span><span class="sc">:</span><span class="dv">66</span>)) <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">names_to=</span><span class="st">&quot;experience_level&quot;</span>, <span class="at">values_to=</span><span class="st">&quot;experience_values&quot;</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># instrument, pivot longer</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>dtc <span class="ot">=</span> dta <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">14</span>) <span class="sc">%&gt;%</span> <span class="fu">pivot_longer</span>(<span class="at">cols=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">14</span>, <span class="at">names_to=</span><span class="st">&quot;instrument_type&quot;</span>, <span class="at">values_to=</span><span class="st">&quot;instrument_values&quot;</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>dtc <span class="sc">%&gt;%</span> <span class="fu">print</span>(<span class="at">n=</span><span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,157 × 3
       ID instrument_type instrument_values
