@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="nils.holmberg@isk.lu.se">
 
-<title>workshop-3</title>
+<title>SKOC62: Forskningsmetoder i strategisk kommunikation VT24</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4283,32 +4284,43 @@ color: #333333;
 
 <body class="fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">SKOC62: Forskningsmetoder i strategisk kommunikation VT24</h1>
+            <p class="subtitle lead">Quantitative methods workshops 1 — 4</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
 
-<main class="content" id="quarto-document-content">
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>nils.holmberg@isk.lu.se </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+
+<section id="introduction" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.0     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.1     ✔ tibble    3.1.8
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
-Linking to librsvg 2.50.7</code></pre>
-</div>
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-fe3ffb0d7645185e9bb6" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-fe3ffb0d7645185e9bb6">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-3da714419f51ed7756f4" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-3da714419f51ed7756f4">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <ul>
@@ -4321,35 +4333,30 @@ Linking to librsvg 2.50.7</code></pre>
 <li><p><strong>SUPER IMPORTANT!! Save your data file and all changes so you can use it for the following workshops! Also save your output files or copy paste relevant parts to another document if you want to remember what you did in the previous workshop!</strong></p></li>
 </ul>
 </section>
-<section id="workshop-descriptive-statistics" class="level1">
-<h1>Workshop: Descriptive statistics</h1>
+<section id="workshop-descriptive-statistics" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Workshop: Descriptive statistics</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html</a></li>
 </ul>
 </section>
-<section id="workshop-data-transformation" class="level1">
-<h1>Workshop: Data transformation</h1>
+<section id="workshop-data-transformation" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Workshop: Data transformation</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-2.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-2.html</a></li>
 </ul>
 </section>
-<section id="workshop-bivariate-analysis" class="level1">
-<h1>Workshop: Bivariate analysis</h1>
-<section id="univariate-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="univariate-analysis">Univariate analysis</h2>
+<section id="workshop-bivariate-analysis" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Workshop: Bivariate analysis</h1>
+<section id="univariate-analysis" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="univariate-analysis"><span class="header-section-number">3.1</span> Univariate analysis</h2>
 <ol type="a">
 <li>Create a new summative <code>index_infoaccess</code> using the variables 6-11: <code>info_work, info_org, info_vision, info_change, info_intracomm and info_mgmttrust</code>. Note central tendency, dispersion and normal distribution.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create index variable</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>index_infoaccess <span class="ot">=</span> <span class="fu">rowSums</span>(<span class="fu">as.tibble</span>(<span class="fu">lapply</span>(data[,<span class="dv">6</span><span class="sc">:</span><span class="dv">11</span>], as.numeric)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: `as.tibble()` was deprecated in tibble 2.0.0.
-ℹ Please use `as_tibble()` instead.
-ℹ The signature and semantics have changed, see `?as_tibble`.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize distribution</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(data<span class="sc">$</span>index_infoaccess)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create index variable</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>index_infoaccess <span class="ot">=</span> <span class="fu">rowSums</span>(<span class="fu">as_tibble</span>(<span class="fu">lapply</span>(data[,<span class="dv">6</span><span class="sc">:</span><span class="dv">11</span>], as.numeric)))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize distribution</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(data<span class="sc">$</span>index_infoaccess)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -4357,8 +4364,8 @@ Linking to librsvg 2.50.7</code></pre>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get descriptive stats</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data<span class="sc">$</span>index_infoaccess)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get descriptive stats</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data<span class="sc">$</span>index_infoaccess)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
    6.00   18.00   23.00   21.49   26.00   30.00    1767 </code></pre>
@@ -4369,15 +4376,15 @@ Linking to librsvg 2.50.7</code></pre>
 <li><p>How can we think about the possible effects that the variables in 1b can have on the index in 1a? What does the index measure?</p></li>
 </ol>
 </section>
-<section id="bivariate-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="bivariate-analysis">Bivariate analysis</h2>
+<section id="bivariate-analysis" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="bivariate-analysis"><span class="header-section-number">3.2</span> Bivariate analysis</h2>
 <ol type="a">
 <li><p>Perform bivariate analyses for each of the variables in 1b and the <code>index_infoaccess</code>. Use compare means to compare with qualitative variables; use correlate to compare with quantitative variables. (NB: For tests of statistical significance when comparing means, please follow instructions given during the workshop (ie independent samples t-test and one-way ANOVA).)</p></li>
 <li><p>Now perform bivariate analyses for each of the variables in 1b pairwise (i.e. compare them with each other, using cross tables, compare means, or correlation as applicable). Note any significant relationships.</p></li>
 </ol>
 </section>
-<section id="creating-dummy-variables" class="level2">
-<h2 class="anchored" data-anchor-id="creating-dummy-variables">Creating dummy variables</h2>
+<section id="creating-dummy-variables" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="creating-dummy-variables"><span class="header-section-number">3.3</span> Creating dummy variables</h2>
 <ol type="a">
 <li>Recode <code>Gender</code> to a variable with only two categories, Female=1 and Male=0. Compare it with the original variable to make sure you coded correctly. Name it <code>dummy_gender</code>.</li>
 </ol>
@@ -4418,8 +4425,8 @@ Communicator or equivalent                         &lt;NA&gt;
 <p><strong>THAT’S IT FOR TODAY! REMEMBER TO SAVE YOUR DATA AND OUTPUT FILES (THOSE ARE TWO DIFFERENT OPERATIONS)!</strong></p>
 </section>
 </section>
-<section id="workshop-multivariate-analysis" class="level1">
-<h1>Workshop: Multivariate analysis</h1>
+<section id="workshop-multivariate-analysis" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Workshop: Multivariate analysis</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-4.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-4.html</a></li>
 </ul>

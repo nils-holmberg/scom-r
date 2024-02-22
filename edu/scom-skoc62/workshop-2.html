@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="nils.holmberg@isk.lu.se">
 
-<title>workshop-2</title>
+<title>SKOC62: Forskningsmetoder i strategisk kommunikation VT24</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4249,32 +4250,43 @@ color: #333333;
 
 <body class="fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">SKOC62: Forskningsmetoder i strategisk kommunikation VT24</h1>
+            <p class="subtitle lead">Quantitative methods workshops 1 — 4</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
 
-<main class="content" id="quarto-document-content">
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>nils.holmberg@isk.lu.se </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+
+<section id="introduction" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.0     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.1     ✔ tibble    3.1.8
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
-Linking to librsvg 2.50.7</code></pre>
-</div>
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-913d252f5f7ecabe2921" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-913d252f5f7ecabe2921">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-88ba2d3f43287a0cfc22" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-88ba2d3f43287a0cfc22">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <ul>
@@ -4287,16 +4299,16 @@ Linking to librsvg 2.50.7</code></pre>
 <li><p><strong>SUPER IMPORTANT!! Save your data file and all changes so you can use it for the following workshops! Also save your output files or copy paste relevant parts to another document if you want to remember what you did in the previous workshop!</strong></p></li>
 </ul>
 </section>
-<section id="workshop-descriptive-statistics" class="level1">
-<h1>Workshop: Descriptive statistics</h1>
+<section id="workshop-descriptive-statistics" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Workshop: Descriptive statistics</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html</a></li>
 </ul>
 </section>
-<section id="workshop-data-transformation" class="level1">
-<h1>Workshop: Data transformation</h1>
-<section id="recoding-variables" class="level2">
-<h2 class="anchored" data-anchor-id="recoding-variables">Recoding variables</h2>
+<section id="workshop-data-transformation" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Workshop: Data transformation</h1>
+<section id="recoding-variables" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="recoding-variables"><span class="header-section-number">2.1</span> Recoding variables</h2>
 <ol type="a">
 <li>Create a cross table with <code>Role</code> (nr 5) as the column variable, and <code>org_gossip</code> (nr 17) as the row variable. Do managers have more of a problem with gossip than other groups?</li>
 </ol>
@@ -4309,8 +4321,8 @@ Linking to librsvg 2.50.7</code></pre>
 <li><p>Create a cross table with Role as the column variable and the new variable Gossip3cat as the row variable. Do the differences appear more clearly now?</p></li>
 </ol>
 </section>
-<section id="computing-variables" class="level2">
-<h2 class="anchored" data-anchor-id="computing-variables">Computing variables</h2>
+<section id="computing-variables" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="computing-variables"><span class="header-section-number">2.2</span> Computing variables</h2>
 <ol type="a">
 <li><p>The variable for Age is measured in birth years. We will now recode it into measuring age in years of age. Your current age is 2018 – your birth year. We shall perform this calculation for all respondents. The survey was conducted in late 2015 – early 2016 (see Falkheimer et al, 2017). We will use 2016 for all respondents.</p></li>
 <li><p>Choose <code>Transform -&gt; Compute variable</code>. In the field Target Variable, write the name of your new variable. Remember to name it in a way that is understandable to you! Click Type and Label and choose Use expression as label. Write “2016 – Age” in the field Numeric Expression. Click OK.</p></li>
@@ -4332,8 +4344,8 @@ Linking to librsvg 2.50.7</code></pre>
 <li>Inspect the new variable. What is the mean and median age? Does it correspond with the original variable?</li>
 </ol>
 </section>
-<section id="creating-an-index" class="level2">
-<h2 class="anchored" data-anchor-id="creating-an-index">Creating an index</h2>
+<section id="creating-an-index" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="creating-an-index"><span class="header-section-number">2.3</span> Creating an index</h2>
 <ol type="a">
 <li><p>Consider the variables 31-35 (<code>femcomm_performance, femcomm_mgmt, femcomm_opportunity, femcomm_support, and femcomm_barriers</code>). Run frequency tables for all of them. What do they measure? Do they seem to have something in common? (Hint: they do.)</p></li>
 <li><p>Look at the individual values of the variables. Do they all have the same number of values? Are they coded in the same direction?</p></li>
@@ -4344,8 +4356,8 @@ Linking to librsvg 2.50.7</code></pre>
 <li><p>What is the minimum and maximum score? What is the mean and the median? Does the variable seem to be approximately normally distributed?</p></li>
 </ol>
 </section>
-<section id="a-first-attempt-of-hypothesis-testing" class="level2">
-<h2 class="anchored" data-anchor-id="a-first-attempt-of-hypothesis-testing">A first attempt of hypothesis testing</h2>
+<section id="a-first-attempt-of-hypothesis-testing" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="a-first-attempt-of-hypothesis-testing"><span class="header-section-number">2.4</span> A first attempt of hypothesis testing</h2>
 <ol type="a">
 <li><p>Are female or male communicators more likely to score high on the index we created above? Let’s find out! Choose Compare Means and enter Gender as the independent variable and our new index as the dependent variable. What is the mean score for men and women, respectively?</p></li>
 <li><p>Is this a statistically significant difference? Let’s find out! Choose <code>Analyze -&gt; Compare means -&gt; Independent-Samples t-test</code> from the drop-down menu. Insert the index variable into the field Test Variable(s). Insert the Gender variable into the field Grouping Variable. Click Define Groups. Write 1 in the field Group 1 and 2 in the field Group 2. This means that we will compare the mean score on the index for the females (1) and the males (2). A t-test is a test for statistical significance which we will talk more about later.</p></li>
@@ -4355,14 +4367,14 @@ Linking to librsvg 2.50.7</code></pre>
 <p><strong>THAT’S IT FOR TODAY! REMEMBER TO SAVE YOUR DATA AND OUTPUT FILES (THOSE ARE TWO DIFFERENT OPERATIONS)!</strong></p>
 </section>
 </section>
-<section id="workshop-bivariate-analysis" class="level1">
-<h1>Workshop: Bivariate analysis</h1>
+<section id="workshop-bivariate-analysis" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Workshop: Bivariate analysis</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-3.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-3.html</a></li>
 </ul>
 </section>
-<section id="workshop-multivariate-analysis" class="level1">
-<h1>Workshop: Multivariate analysis</h1>
+<section id="workshop-multivariate-analysis" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Workshop: Multivariate analysis</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-4.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-4.html</a></li>
 </ul>

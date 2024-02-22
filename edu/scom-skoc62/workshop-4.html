@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="nils.holmberg@isk.lu.se">
 
-<title>workshop-4</title>
+<title>SKOC62: Forskningsmetoder i strategisk kommunikation VT24</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4249,32 +4250,43 @@ color: #333333;
 
 <body class="fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">SKOC62: Forskningsmetoder i strategisk kommunikation VT24</h1>
+            <p class="subtitle lead">Quantitative methods workshops 1 — 4</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
 
-<main class="content" id="quarto-document-content">
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>nils.holmberg@isk.lu.se </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+
+<section id="introduction" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
 <div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.0     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.1     ✔ tibble    3.1.8
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
-Linking to librsvg 2.50.7</code></pre>
-</div>
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-ee614266f0c09b371c5c" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-ee614266f0c09b371c5c">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-777bc2ef9c7fd2894b73" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-777bc2ef9c7fd2894b73">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = cyan,\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = cyan]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <ul>
@@ -4287,28 +4299,28 @@ Linking to librsvg 2.50.7</code></pre>
 <li><p><strong>SUPER IMPORTANT!! Save your data file and all changes so you can use it for the following workshops! Also save your output files or copy paste relevant parts to another document if you want to remember what you did in the previous workshop!</strong></p></li>
 </ul>
 </section>
-<section id="workshop-descriptive-statistics" class="level1">
-<h1>Workshop: Descriptive statistics</h1>
+<section id="workshop-descriptive-statistics" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Workshop: Descriptive statistics</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-1.html</a></li>
 </ul>
 </section>
-<section id="workshop-data-transformation" class="level1">
-<h1>Workshop: Data transformation</h1>
+<section id="workshop-data-transformation" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Workshop: Data transformation</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-2.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-2.html</a></li>
 </ul>
 </section>
-<section id="workshop-bivariate-analysis" class="level1">
-<h1>Workshop: Bivariate analysis</h1>
+<section id="workshop-bivariate-analysis" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Workshop: Bivariate analysis</h1>
 <ul>
 <li><a href="https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-3.html">https://nils-holmberg.github.io/scom-r/edu/scom-skoc62/workshop-3.html</a></li>
 </ul>
 </section>
-<section id="workshop-multivariate-analysis" class="level1">
-<h1>Workshop: Multivariate analysis</h1>
-<section id="multiple-regression-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-regression-analysis">Multiple regression analysis</h2>
+<section id="workshop-multivariate-analysis" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Workshop: Multivariate analysis</h1>
+<section id="multiple-regression-analysis" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="multiple-regression-analysis"><span class="header-section-number">4.1</span> Multiple regression analysis</h2>
 <ol type="a">
 <li><p>Create a model using multiple regression analysis <code>Analyze -&gt; Regression -&gt; Linear</code>.</p></li>
 <li><p>Under Dependent, enter your dependent variable (<code>index_infoaccess</code>, Workshop #3 task 1a). Under Independent(s), enter your independent variables: <code>Age</code> in years (see Workshop #2 task 2), <code>dummy_gender</code>, <code>Org_type</code>, <code>dummy_manager</code> and <code>dummy_communicator</code> (Workshop #3 task 3). Click OK.</p></li>
