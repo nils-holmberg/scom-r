@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 }
-
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-}
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -4319,8 +4285,8 @@ color: #333333;
 <h2 data-number="0.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">0.1</span> Introduction</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b4f6469bf64358edcc8d" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-b4f6469bf64358edcc8d">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = \"#517699\",\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = \"#517699\", fontcolor = white, fontname = \"Arial-Bold\"]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-074756378c96502e372d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-074756378c96502e372d">{"x":{"diagram":"\n#directed graph \ndigraph some_name {\n\n# initiate graph\ngraph [\nlayout = dot,\nrankdir = LR,\noverlap = false,\nfontsize = 14,\nfontname = Helvetica,\nlabel = \"Factors expected to influence co-workers perceived access to information\n\n\",\nlabelloc = t\n]\n\n# global node settings\nnode [\nfontsize = 10,\nfontname = Helvetica,\nshape = circle,\ncolor = grey,\nstyle = filled,\nfillcolor = \"#517699\",\nlabel = \"\"\n]\n\n# node labels, independent variables\niv1 [label = \"co-worker age\", shape = circle, fillcolor = white]\niv2 [label = \"co-worker role\", shape = circle, fillcolor = white]\niv3 [label = \"organization type\", shape = circle, fillcolor = white]\n\n# node labels, dependent variables\ndv1 [label = \"co-worker \nperceived access \nto information\", circle = folder, fillcolor = \"#517699\", fontcolor = white, fontname = \"Arial-Bold\"]\n#dv2 [label = \"Upplevd trovärdighet\", circle = folder, fillcolor = cyan]\n\n# edge definitions\nedge [color = black]\n{iv1 iv2 iv3} -> dv1\n#edge [color = grey]\n#{iv1 iv2 iv3} -> dv2\n#edge [color = grey]\n#dv1 -> dv2\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <ul>
@@ -4350,13 +4316,9 @@ color: #333333;
 <section id="univariate-analysis" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="univariate-analysis"><span class="header-section-number">3.1</span> Univariate analysis</h2>
 <ol type="a">
-<li>Create a new summative <code>index_infoaccess</code> using the variables 6-11: <code>info_work, info_org, info_vision, info_change, info_intracomm and info_mgmttrust</code>. Note central tendency, dispersion and normal distribution.</li>
+<li>Create a new summative <code>index_infoaccess</code> using the variables 6-11: <code>info_work</code>, <code>info_org</code>, <code>info_vision</code>, <code>info_change</code>, <code>info_intracomm</code> and <code>info_mgmttrust</code>. Note central tendency, dispersion and normal distribution.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create index variable</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>index_infoaccess <span class="ot">=</span> <span class="fu">rowSums</span>(<span class="fu">as_tibble</span>(<span class="fu">lapply</span>(data[,<span class="dv">6</span><span class="sc">:</span><span class="dv">11</span>], as.numeric)))</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize distribution</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(data<span class="sc">$</span>index_infoaccess)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -4364,8 +4326,6 @@ color: #333333;
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get descriptive stats</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data<span class="sc">$</span>index_infoaccess)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
    6.00   18.00   23.00   21.49   26.00   30.00    1767 </code></pre>
@@ -4373,14 +4333,14 @@ color: #333333;
 </div>
 <ol start="2" type="a">
 <li><p>Take a look at the following variables: <code>Age</code> in years (see previous workshop), <code>Gender</code>, <code>Role</code>, and <code>Org_type</code>. Note the dispersion, central tendency and normal distribution of the variables as applicable. Are the variables quantitative (ratio/interval) or qualitative (nominal/ordinal)?</p></li>
-<li><p>How can we think about the possible effects that the variables in 1b can have on the index in 1a? What does the index measure?</p></li>
+<li><p>How can we think about the possible effects that the variables in 3.1b can have on the index in 3.1a? What does the index measure?</p></li>
 </ol>
 </section>
 <section id="bivariate-analysis" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="bivariate-analysis"><span class="header-section-number">3.2</span> Bivariate analysis</h2>
 <ol type="a">
-<li><p>Perform bivariate analyses for each of the variables in 1b and the <code>index_infoaccess</code>. Use compare means to compare with qualitative variables; use correlate to compare with quantitative variables. (NB: For tests of statistical significance when comparing means, please follow instructions given during the workshop (ie independent samples t-test and one-way ANOVA).)</p></li>
-<li><p>Now perform bivariate analyses for each of the variables in 1b pairwise (i.e. compare them with each other, using cross tables, compare means, or correlation as applicable). Note any significant relationships.</p></li>
+<li><p>Perform bivariate analyses for each of the variables in 3.1b and the <code>index_infoaccess</code>. Use compare means to compare with qualitative variables; use correlate to compare with quantitative variables. (NB: For tests of statistical significance when comparing means, please follow instructions given during the workshop (i.e. independent samples t-test and one-way ANOVA).)</p></li>
+<li><p>Now perform bivariate analyses for each of the variables in 3.1b pairwise (i.e. compare them with each other, using cross tables, compare means, or correlation as applicable). Note any significant relationships.</p></li>
 </ol>
 </section>
 <section id="creating-dummy-variables" class="level2" data-number="3.3">
@@ -4407,7 +4367,7 @@ Female   Male  Other   &lt;NA&gt;
 </div>
 </div>
 <ol start="2" type="a">
-<li>Recode Role into three separate dummy variables as follows: Create three new variables named <code>dummy_manager</code>, <code>dummy_communicator</code>, and <code>dummy_coworker</code>. dummy_manager should have the value 1 for manager and 0 for all other values in the old variable. dummy_communicator should have the vale 1 for communicator and 0 for all other values in the old variable. dummy_coworker should have the value 1 for coworkers and 0 for all other values in the old variable. Compare the dummy variables with the original variable Role to make sure you coded correctly. Note that you will use these variables during the next workshop!</li>
+<li>Recode Role into three separate dummy variables as follows: Create three new variables named <code>dummy_manager</code>, <code>dummy_communicator</code>, and <code>dummy_coworker</code>. <code>dummy_manager</code> should have the value 1 for manager and 0 for all other values in the old variable. <code>dummy_communicator</code> should have the vale 1 for communicator and 0 for all other values in the old variable. <code>dummy_coworker</code> should have the value 1 for coworkers and 0 for all other values in the old variable. Compare the dummy variables with the original variable <code>Role</code> to make sure you coded correctly. Note that you will use these variables during the next workshop!</li>
 </ol>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
